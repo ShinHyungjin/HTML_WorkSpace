@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- 스타일시트를 적용하는 방법은 2가지가 있음 
+	1. 인라인 방식 : 해당 태그에 직접명시 (최우선 우선순위)
+		 - <td style="font-size:50pt"/>
+	2. 임베디드 방식 : 개별 style태그로 명시
+	     -  small = 선택자 
+		 -  .선택자 : class
+		 - #선택자 : id
+	
+-->
+ <style>
+
+	.small {
+			font-size:20px;
+			background:yellow;
+	}
+
+	table {
+			border:7px dotted blue;
+	}
+
+	select {
+			background:green;
+			color:white;
+	}
+	
+	body {
+			background:gray;
+	}
+
+
+ </style>
+
 <meta charset="UTF-8">
 <title>Document</title>
 </head>
 <body>
-
 	<table border="3">
 		<tr>
-			<td colspan="2" align="center"><h1>회 원 가 입</h3></td>
+			<td colspan="2" align="center">회 원 가 입</td>
 		</tr>
 
 		<tr>
-			<td>아이디</td>
+			<td class="small">아이디</td>
 			<td><input type="text" placeholder="숫자,영문자 포함" maxlength="12" size="31"/></td>
 		</tr>
 
 		<tr>
-			<td>패스워드</td>
+			<td class="small">패스워드</td>
 			<td><input type="password" placeholder="PW" maxlength="12" size="31"/></td>
 		</tr>
 
 		<tr>
-			<td>이름</td>
+			<td class="small">이름</td>
 			<td><input type="text" placeholder="이름" maxlength="5" size="31"/></td>
 		</tr>
 
 		<tr>
-			<td>연락처</td>
+			<td class="small">연락처</td>
 			<td><select name="phone">
 					<option value="010">010</option>
 					<option value="011">011</option>
@@ -38,7 +69,7 @@
 		</tr>
 
 		<tr>
-			<td>취미</td>
+			<td class="small">취미</td>
 			<td size="21">
 			여행<input type="checkbox" />
 			공부<input type="checkbox" />
@@ -47,7 +78,7 @@
 		</tr>
 
 		<tr>
-			<td>이메일</td>
+			<td class="small">이메일</td>
 			<td><input type="text" placeholder="E-Mail" maxlength="30" size="15"/>@<select name="mail">
 					<option value="naver.com">naver.com</option>
 					<option value="daum.net">daum.net</option>
@@ -57,7 +88,7 @@
 		</tr>
 
 		<tr>
-			<td>이메일 수신 동의 여부</td>
+			<td class="small">이메일 수신 동의 여부</td>
 			<td>
 			  예<input name="receive" type="radio"/>
 			  아니오<input name="receive" type="radio"/>
@@ -65,7 +96,7 @@
 		</tr>
 
 		<tr>
-			<td>우편번호</td>
+			<td class="small">우편번호</td>
 			<td><input type="text" placeholder="우편번호" readonly="true" size="14"/>
 					<input type="button" value="우편번호 검색"/>
 			</td>
@@ -76,6 +107,5 @@
 		</tr>
 
 	</table>
-
 </body>
 </html>
