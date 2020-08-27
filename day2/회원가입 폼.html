@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+
+	<table border="3">
+		<tr>
+			<td colspan="2" align="center"><h1>회 원 가 입</h3></td>
+		</tr>
+
+		<tr>
+			<td>아이디</td>
+			<td><input type="text" placeholder="숫자,영문자 포함" maxlength="12" size="31"/></td>
+		</tr>
+
+		<tr>
+			<td>패스워드</td>
+			<td><input type="password" placeholder="PW" maxlength="12" size="31"/></td>
+		</tr>
+
+		<tr>
+			<td>이름</td>
+			<td><input type="text" placeholder="이름" maxlength="5" size="31"/></td>
+		</tr>
+
+		<tr>
+			<td>연락처</td>
+			<td><select name="phone">
+					<option value="010">010</option>
+					<option value="011">011</option>
+					<option value="012">012</option>
+					<option value="017">017</option>
+					</select> - <input type="text" maxlength="4" size="6"/> - <input type="text" maxlength="4" size="6"/>
+					</td>
+		</tr>
+
+		<tr>
+			<td>취미</td>
+			<td size="21">
+			여행<input type="checkbox" />
+			공부<input type="checkbox" />
+			코딩<input type="checkbox" />
+			</td>
+		</tr>
+
+		<tr>
+			<td>이메일</td>
+			<td><input type="text" placeholder="E-Mail" maxlength="30" size="15"/>@<select name="mail">
+					<option value="naver.com">naver.com</option>
+					<option value="daum.net">daum.net</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="halla.ac.kr">halla.ac.kr</option>
+					</select></td>
+		</tr>
+
+		<tr>
+			<td>이메일 수신 동의 여부</td>
+			<td>
+			  예<input name="receive" type="radio"/>
+			  아니오<input name="receive" type="radio"/>
+			</td>
+		</tr>
+
+		<tr>
+			<td>우편번호</td>
+			<td><input type="text" placeholder="우편번호" readonly="true" size="14"/>
+					<input type="button" value="우편번호 검색"/>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2" align="center"><input type="button" value="회원가입" /></td>
+		</tr>
+
+	</table>
+
+</body>
+</html>
