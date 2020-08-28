@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	div {
+		width:200px;
+		height:200px;
+		margin:100px;
+		float:left;
+		border:2px solid;
+		font-size:30pt;
+	}
+
+	#box1 {
+		background:orange;
+		transform:translate(150px, 40px); /*X축, Y축*/
+	}
+
+	#box2 {
+		background:lightblue;
+		transform:rotate(40deg);
+	}
+
+	#box3 {
+		background:lightyellow;
+		transform:scale(2,2); /*너비, 높이 2배*/
+	}
+</style>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+	<h2> 
+		<pre>
+			CSS3부터는 변형, 전이 애니메이션등을 지원하고, 특히 변형시에는 Transform을 명시해야함
+			Transform의 종류
+			1. translate : 이동
+			2. rotate : 회전
+			3. scale : 크기(비율)
+		</pre>
+	</h2>
+	<div id="box1"> 이동 </div>
+	<div id="box2"> 회전 </div>
+	<div id="box3"> 크기 </div>
+</body>
+</html>

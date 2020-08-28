@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	div {
+		margin:25px;
+	}
+	#box {
+		width:100px;
+		height:100px;
+		background:red;
+		transition:width 0.4s;
+	}
+	#box:hover {
+		width:300px;
+	}
+
+	#box2 {
+		width:100px;
+		height:100px;
+		background:yellow;
+		transition:background 0.3s;
+	}
+
+	#box2:hover {
+		background:green;
+	}
+
+	#box3 {
+		width:100px;
+		height:100px;
+		background:gray;
+		transition:border 0.1s;
+	}
+
+	#box3:hover {
+		border:10px solid;
+	}
+
+	#box4 {
+		width:100px;
+		height:100px;
+		background-image:linear-gradient(to right, yellow, red);
+		transition:linear 0.5s;
+	}
+
+	#box4:hover {
+		background-image:linear-gradient(to right, yellow, green);
+	}
+
+</style>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+	<pre>
+		<h3>CSS3부터 프로그래밍에 의존하지 않고 간단한 애니메이션 구현 가능
+		</h3>
+	</pre>
+	<div id="box"></div>
+	<div id="box2"></div>
+	<div id="box3"></div>
+	<div id="box4"></div>
+</body>
+</html>

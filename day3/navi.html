@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	a {
+		text-decoration:none; /*링크 밑줄 제거*/
+		display:block; /*태그의 속성을 블럭형으로 강제변환*/
+		background:#ee1922
+	}
+
+	div {
+		width:200px;
+		height:100px;
+	}
+
+	.titleStyle {
+		background:#123456;
+		color:white;
+	}
+
+	/*공통적용 스타일은 class 단위로 정의하여 재사용 하면 효율적*/
+</style>
+
+<base target="content"/>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+	<div>
+		<a href="#" class="titleStyle"> 1일차</a>
+		<a href="#"> 예제2</a>
+		<a href="#"> 예제3</a>
+		<a href="#"> 예제4</a>
+	</div>
+
+	<div>
+		<a href="#" class="titleStyle"> 2일차</a>
+		<a href="#"> 예제2</a>
+		<a href="#"> 예제3</a>
+		<a href="#"> 예제4</a>
+	</div>
+
+	<div>
+		<a href="#" class="titleStyle"> 3일차</a>
+		<a href="#"> 예제2</a>
+		<a href="#"> 예제3</a>
+		<a href="#"> 예제4</a>
+	</div>
+
+	<a href="http://www.naver.com">네이버</a>
+</body>
+</html>
