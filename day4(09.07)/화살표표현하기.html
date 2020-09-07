@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표 표현하기</title>
+
+    <style>
+        .arrow {
+            border:1px solid red;
+            border-width:0px 3px 3px 0px;
+            display:inline-block;
+            padding:3px;
+        }
+        .right {
+            transform:rotate(-45deg);
+        }
+
+        .up {
+            transform:rotate(-135deg);
+        }
+
+        .down {
+            transform:rotate(45deg);
+        }
+
+        .left {
+            transform:rotate(135deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Ctal + / 는 주석 -->
+    <!-- CSS 화살표 만들기 -->
+    <!-- Span 태그는 효과없이 마크업만을 목적으로 사용 -->
+    <!-- 복사라인에 커서를 올려놓고 shift + alt + 방향키하면 그대로 복사  -->
+    <span class="arrow right"></span>
+    <span class="arrow up"></span>
+    <span class="arrow down"></span>
+    <span class="arrow left"></span>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+            font-size:30pt;
+        }
+        #box1 {
+            background-position:center center;
+            width:400px;
+            height:400px;
+            border:2px solid blue;
+            background-image:url("https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/90056459_140428074163862_3863747975311360545_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=102&_nc_ohc=VsM8uJ0SMg4AX_grmVU&oh=f161665a601c59649aca5b5b4689bf0c&oe=5F688B31");
+        }
+        #box2 {
+            display:inline-block;
+            background-position:center center;
+            width:400px;
+            height:400px;
+            border:2px solid blue;
+            background-image:url("https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/90056459_140428074163862_3863747975311360545_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=102&_nc_ohc=VsM8uJ0SMg4AX_grmVU&oh=f161665a601c59649aca5b5b4689bf0c&oe=5F688B31");
+        }
+        #mask1 {
+            width:400px;
+            height:400px;
+            align-content: center;
+            opacity:0.8;
+            background:#ffffff;
+            line-height:400px;
+        }
+        #mask1:hover {
+            animation-name:ss;
+            animation-duration:2s;
+		    animation-iteration-count:infinite;
+        }
+        #mask2 {
+            width:400px;
+            height:400px;
+            align-content: center;
+            opacity:0.8;
+            background:#ffffff;
+            line-height:400px;
+        }
+        #mask2:hover {
+            animation-name:ss;
+            animation-duration:2s;
+		    animation-iteration-count:infinite;
+        }
+        @keyframes ss{
+                0% {
+                        opacity:0.7;
+                        font-size:30pt;
+                }
+                100% {
+                        opacity:0.01;
+                        font-size:17pt;
+                }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <div id="mask1" >
+            잠시만 기다리세요...
+        </div>
+    </div>
+    <div id="box2">
+        <div id="mask2">
+            잠시만 기다리세요...
+        </div>
+    </div>
+
+</body>
+</html>

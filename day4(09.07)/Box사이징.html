@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html 크기는 width + border + padding */
+        /* box-sizing의 border-box는 알아서 width에 크기를 삽입시킴 */
+        #box1 {
+            width:200px;
+            height:200px;
+            background:red;
+            padding:50px;
+        }
+        #box2 {
+            width:200px;
+            height:200px;
+            background:yellow;
+            border:10px solid black;
+            box-sizing:border-box;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    
+</body>
+</html>
